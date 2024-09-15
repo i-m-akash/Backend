@@ -91,6 +91,9 @@ app.get('/api/getkey', (req, res) =>
 //Payment code ends
 const PORT = process.env.PORT;
 
+app.get('/', (req, res) =>
+  res.status(200).json({ akash :24 })
+);
 
 
 const clientid = "762044144985-l52175nbuk9gjqghtjgsuhuln3vs2efo.apps.googleusercontent.com";
